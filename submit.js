@@ -35,11 +35,11 @@ function submitForm(event) {
 
     // Check and send data
     if (theHour >= 20 || theHour < 8) {
-        showAlert("Las reservas deben entre las 8:00 y 20:00");
+        showAlert("A");
     } else if (dayOfWeekStr === "Sunday") {
-        showAlert("Los dias Domingos se encuentra cerrado, por favor reserve para otra fecha.");
+        showAlert("B");
     } else if (dayOfWeekStr === "Saturday" && (theHour < 9 || theHour >= 13)) {
-        showAlert("Sabados se encuentra abierto entre las 8:00 y 13:00");
+        showAlert("C");
     } else {
         // Post to backend-DB
         const requestBody = {
@@ -66,7 +66,7 @@ function submitForm(event) {
             return response.json();
         })
         .then(data => {
-            showAlert("Su reserva fue realizada con exito. ¡Muchas gracias!");
+            showAlert("D");
             console.log(data);
         })
         .catch(error => {
