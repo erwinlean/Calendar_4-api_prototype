@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="alert.css">
+  </head>
+<body class="page1">
+  <h1 style="color: black; line-height: 1.5;">Working on Universo webs > clientes > caliz_web (with the style and html correspondent)</h1>
+  <div class="grid_8">
+      <h3><span></span>Turnos</h3>
+      <div class="pad2">
+      
+        <div class="wrapper">
+          <header>
+            <p class="current-date"></p>
+            <div class="icons" style="text-align: center; justify-content: center;">
+              <span id="prev" class="material-symbols-rounded"><</span>
+              <span id="next" class="material-symbols-rounded">></span>
+            </div>
+          </header>
+          <div class="calendar">
+            <ul class="weeks">
+              <li>Dom</li>
+              <li>Lun</li>
+              <li>Mar</li>
+              <li>Mie</li>
+              <li>Jue</li>
+              <li>Vie</li>
+              <li>Sab</li>
+            </ul>
+            <ul class="days">
+            </ul>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <form id="myForm">
+                  <span class="close">&times;</span>
+                  <label for="name">nombre:</label>
+                  <input type="text" id="name" name="name" required>
+                  <br>
+                  <label for="type">Servicio: </label>
+                  <br>
+                  <select id="type" name="type" required>
+                    <option value="Masajes">Masajes</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Etc">etc</option>
+                  </select>
+                  <br>
+                  <label for="cellphone">Telefono de contacto:</label>
+                  <input type="tel" id="cellphone" name="cellphone" required>
+                  <br>
+                  <label for="hour">Hora:</label>
+                  <br>
+                  <input type="time" id="hour" name="hour" required>
+                  <br>
+                  <label for="email">Mail de contacto:</label>
+                  <input type="email" id="email" name="email">
+                  <br>
+                  <button type="submit" onclick="submitForm(event)" id="submitBtn">Reservar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="./preventDefault.js"></script>
+  <script src="./newAlert.js"></script>
+  <script src="./calendar.js"></script>
+  <script src="./submit.js"></script>
+</body>
+</html>

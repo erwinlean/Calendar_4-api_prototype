@@ -1,0 +1,28 @@
+body {
+	background-color: white !important;
+	font: 13px/20px Arial, Helvetica, sans-serif;
+	color:black;
+	position:relative;
+	min-width:960px;
+	height: 100%;
+	min-height: 100%;
+	background-color: white !important;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lora', serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #b7e2bc;
+}
+body > div > div{
+	width: auto;
+	height: 400px;
+}
+body > div > div > div > div{
+	width: auto;
+	height: 400px;
+}
+.calendar {
+    padding: 20px;
+    max-height: 270px;
+}
